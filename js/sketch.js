@@ -9,7 +9,7 @@ let zombies = [];
 let numberOfSuns = 150;
 let frame = 0;
 let zombiesInterval = 900;
-let zombiesPerLevel = 15;
+let zombiesPerLevel = 10;
 let zombiesKilled = 0;
 let zombiesSpawn = 0;
 let gameOver = false;
@@ -494,7 +494,7 @@ function handleGameStatus() {
       switch (currentLevel) {
         case 1:
           currentLevel = 2;
-          zombiesInterval = 750;
+          zombiesInterval = 900;
           zombiesSpawn = 0;
           zombiesPerLevel *= 3;
           frame = 0;
@@ -508,7 +508,7 @@ function handleGameStatus() {
           break;
         case 2:
           currentLevel = 3;
-          zombiesInterval = 750;
+          zombiesInterval = 1000;
           zombiesSpawn = 0;
           zombiesPerLevel *= 2;
           frame = 0;
